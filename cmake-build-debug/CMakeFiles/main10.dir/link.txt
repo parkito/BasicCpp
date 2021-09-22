@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/main10.dir/src/basics/10_asserts.cpp.o  -o main10 

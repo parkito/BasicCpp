@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/language_04.dir/src/04_conditional.cpp.o  -o language_04 

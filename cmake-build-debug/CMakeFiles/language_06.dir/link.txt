@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/language_06.dir/src/06_attributes.cpp.o  -o language_06 

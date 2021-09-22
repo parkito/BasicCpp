@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/main17.dir/src/basics/17_array_allocation.cpp.o  -o main17 

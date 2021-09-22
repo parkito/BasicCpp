@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/language_01.dir/src/01_namespace.cpp.o  -o language_01 

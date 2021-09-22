@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/language_17.dir/src/17_type_alias.cpp.o  -o language_17 

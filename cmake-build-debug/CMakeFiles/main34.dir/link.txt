@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/main34.dir/src/basics/34_enable_shared_from_this.cpp.o  -o main34 

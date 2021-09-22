@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/main19.dir/src/basics/19_strings.cpp.o  -o main19 

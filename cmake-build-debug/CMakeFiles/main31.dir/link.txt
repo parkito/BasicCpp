@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/main31.dir/src/basics/31_filesystem.cpp.o  -o main31 

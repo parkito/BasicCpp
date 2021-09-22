@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/main7.dir/src/basics/07_class.cpp.o  -o main7 

@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/language_10.dir/src/10_pairs.cpp.o  -o language_10 

@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/main28.dir/src/basics/28_deduction.cpp.o  -o main28 

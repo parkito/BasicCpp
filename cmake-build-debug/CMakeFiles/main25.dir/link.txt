@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/main25.dir/src/basics/25_rvalue_reference.cpp.o  -o main25 
