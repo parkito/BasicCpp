@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/main12.dir/src/basics/12_binding.cpp.o  -o main12 

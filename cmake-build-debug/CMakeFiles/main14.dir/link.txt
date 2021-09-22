@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/main14.dir/src/basics/14_casting.cpp.o  -o main14 

@@ -1,5 +1,0 @@
-/usr/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /tmp/BasicCpp
-Compiler /usr/bin/c++ version 10.3.0
--- Configuring done
--- Generating done
--- Build files have been written to: /tmp/BasicCpp/cmake-build-debug

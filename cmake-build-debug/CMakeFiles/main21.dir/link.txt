@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/main21.dir/src/basics/21_templates.cpp.o  -o main21 

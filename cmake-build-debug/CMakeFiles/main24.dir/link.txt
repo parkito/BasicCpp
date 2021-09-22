@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/main24.dir/src/basics/24_var_array.cpp.o  -o main24 

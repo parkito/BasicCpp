@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/language_05.dir/src/05_spaceship_comparison.cpp.o  -o language_05 

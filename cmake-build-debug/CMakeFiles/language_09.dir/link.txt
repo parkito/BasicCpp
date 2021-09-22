@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/language_09.dir/src/09_vectors.cpp.o  -o language_09 

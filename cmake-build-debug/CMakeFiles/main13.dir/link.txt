@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/main13.dir/src/basics/13_container.cpp.o  -o main13 

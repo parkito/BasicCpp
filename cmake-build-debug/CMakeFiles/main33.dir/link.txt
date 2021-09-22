@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/main33.dir/src/basics/33_inline.cpp.o  -o main33 

@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/language_14.dir/src/14_const.cpp.o  -o language_14 

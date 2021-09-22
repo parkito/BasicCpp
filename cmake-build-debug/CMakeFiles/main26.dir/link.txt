@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/main26.dir/src/basics/26_move.cpp.o  -o main26 

@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/language_07.dir/src/07_c_arrays.cpp.o  -o language_07 

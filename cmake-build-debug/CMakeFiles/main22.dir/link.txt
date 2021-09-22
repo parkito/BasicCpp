@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/main22.dir/src/basics/22_lambdas.cpp.o  -o main22 

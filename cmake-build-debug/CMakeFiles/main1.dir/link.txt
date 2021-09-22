@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/main1.dir/src/basics/01_hello.cpp.o CMakeFiles/main1.dir/src/basics/20_vacabluary.cpp.o  -o main1 

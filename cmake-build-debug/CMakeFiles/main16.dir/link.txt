@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/main16.dir/src/basics/16_cstring.cpp.o  -o main16 

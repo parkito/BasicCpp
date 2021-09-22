@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/main32.dir/src/basics/32_folding.cpp.o  -o main32 

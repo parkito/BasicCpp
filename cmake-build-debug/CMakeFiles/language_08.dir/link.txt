@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/language_08.dir/src/08_arrays.cpp.o  -o language_08 

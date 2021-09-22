@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/main29.dir/src/basics/29_binding.cpp.o  -o main29 

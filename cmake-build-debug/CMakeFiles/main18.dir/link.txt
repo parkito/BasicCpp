@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/main18.dir/src/basics/18_smart_pointers.cpp.o  -o main18 
