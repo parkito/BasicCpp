@@ -1,7 +1,8 @@
 #include <iostream>
-using namespace std;
+
+//using namespace std;
 
 int main() {
-  cout << "Hello again " << __cplusplus;
-  return 0;
+    std::cout << "Hello again " << __cplusplus;
+    return 0;
 }

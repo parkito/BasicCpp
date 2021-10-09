@@ -1,8 +1,8 @@
 // static_cast can be used to convert between pointers
 // to related classes (up or down the inheritance hierarchy).
 // It can also perform implicit conversions.
-// static_cast doesn't’t perform any checks
-// static_cast won’t let you convert between two unrelated classes
+// static_cast doesn't perform any checks
+// static_cast won't let you convert between two unrelated classes
 
 // dynamic_cast is related to static_cast in the sense it helps to cast through inheritance,
 // but it’s more powerful than static_cast but has an overhead.
