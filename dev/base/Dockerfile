@@ -1,4 +1,4 @@
-FROM ubuntu:focal
+FROM ubuntu:jammy
 
 ENV TZ=Europe/London
 ENV NOTVISIBLE "in users profile"
@@ -8,15 +8,10 @@ RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone \
     software-properties-common build-essential apt-utils git libpq-dev openssh-server gdb gdbserver rsync cmake vim valgrind fish ltrace strace \
     && add-apt-repository ppa:ubuntu-toolchain-r/test \
     && add-apt-repository universe \
-#    && wget -O - https://apt.kitware.com/keys/kitware-archive-latest.asc 2>/dev/null | gpg --dearmor - | tee /etc/apt/trusted.gpg.d/kitware.gpg >/dev/null \
-#    && apt-add-repository 'deb https://apt.kitware.com/ubuntu/ focal main' \
-#    && apt update && apt-get install -y cmake gcc-11 g++-11 libfmt-dev manpages-dev \
-    && apt update && apt-get install -y cmake gcc-10 g++-10 libfmt-dev manpages-dev \
+    && apt update && apt-get install -y cmake gcc-12 g++-12 libfmt-dev manpages-dev \
     libboost-dev libboost-all-dev manpages-dev stl-manual libloki-dev libspdlog-dev \
-    && update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-10 110 \
-    && update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-10 110 \
-#     && update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-11 110 \
-#    && update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-11 110 \
+    && update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-12 110 \
+    && update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-12 110 \
     && mkdir /var/run/sshd \
     && echo 'root:root' | chpasswd \
     && sed -i 's/PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/sshd_config \
