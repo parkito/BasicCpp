@@ -1,17 +1,17 @@
-FROM ubuntu:focal
+FROM ubuntu:jammy
 
 ENV TZ=Europe/London
 ENV NOTVISIBLE "in users profile"
 
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone \
     && apt-get update && apt-get upgrade -y && apt-get install -y \
-    software-properties-common apt-utils git build-essential libpq-dev openssh-server gdb gdbserver rsync vim cmake valgrind fish ltrace strace \
+    software-properties-common build-essential apt-utils git libpq-dev openssh-server gdb gdbserver rsync cmake vim valgrind fish ltrace strace \
     && add-apt-repository ppa:ubuntu-toolchain-r/test \
     && add-apt-repository universe \
-    && apt update && apt-get install -y g++-10 gcc-10 libfmt-dev \
+    && apt update && apt-get install -y cmake gcc-12 g++-12 libfmt-dev manpages-dev \
     libboost-dev libboost-all-dev manpages-dev stl-manual libloki-dev libspdlog-dev \
-    && update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-10 10 \
-    && update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-10 10 \
+    && update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-12 110 \
+    && update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-12 110 \
     && mkdir /var/run/sshd \
     && echo 'root:root' | chpasswd \
     && sed -i 's/PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/sshd_config \
@@ -22,7 +22,7 @@ RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone \
     && useradd -ms /bin/bash debugger \
     && echo 'debugger:pwd' | chpasswd \
     #install soci
-    && cd /tmp && git clone git://github.com/SOCI/soci.git \
+    && cd /tmp && git clone https://github.com/SOCI/soci.git \
     && cd /tmp/soci && mkdir build \
     && cd build && cmake -G "Unix Makefiles" -DWITH_BOOST=OFF -DWITH_POSTGRESQL=ON -DCMAKE_CXX_STANDARD=20 /tmp/soci/ \
     && cd /tmp/soci/build && make \
