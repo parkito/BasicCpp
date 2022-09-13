@@ -59,5 +59,6 @@ add_executable(language_16 src/16_constexpr.cpp)
 add_executable(language_17 src/17_references.cpp)
 add_executable(language_18 src/18_type_alias.cpp)
 add_executable(language_19 src/19_exceptions.cpp)
+add_executable(language_20 src/20_strings.cpp)
 
 include_directories(SYSTEM inc/ shared/include /usr/include/c++/10/ )
