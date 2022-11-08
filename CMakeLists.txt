@@ -61,5 +61,6 @@ add_executable(language_18 src/18_type_alias.cpp)
 add_executable(language_19 src/19_exceptions.cpp)
 add_executable(language_20 src/20_strings.cpp)
 add_executable(language_21 src/21_unique_pointers.cpp)
+add_executable(language_22 src/22_shared_pointers.cpp)
 
 include_directories(SYSTEM inc/ shared/include /usr/include/c++/10/ )

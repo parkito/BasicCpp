@@ -23,6 +23,10 @@ std::unique_ptr<Rectangle> createResource() {
     return std::make_unique<Rectangle>(1, 2);
 }
 
+void takeOwnership(std::unique_ptr<Rectangle> ptr) {
+    std::cout << ptr->area() << std::endl;
+}
+
 int main() {
     //  unique_ptr
     // When using the std::unique_ptr smart pointer, you can only assign one owner for the pointer
@@ -37,8 +41,12 @@ int main() {
     std::cout << p1->area() << std::endl;
 
     auto p2{createResource()};
+    takeOwnership(std::move(p2));//to pass it to a function
+//    std::cout << "After move" << p2->area() << std::endl; //sigsegv
+    std::cout << createResource()->area() << std::endl;
     std::cout << (p2 == nullptr) << std::endl;
     std::cout << p2->area() << std::endl;
+    std::cout << "Reset" << std::endl;
     p2.reset();
     std::cout << (p2 == nullptr) << std::endl;
 }
