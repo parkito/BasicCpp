@@ -12,8 +12,16 @@ public:
         breadth = b;
     }
 
+    ~Rectangle() {
+        std::cout << "Deallocating" << std::endl;
+    }
+
     int area() { return length * breadth; }
 };
+
+std::unique_ptr<Rectangle> createResource() {
+    return std::make_unique<Rectangle>(1, 2);
+}
 
 int main() {
     //  unique_ptr
@@ -27,4 +35,10 @@ int main() {
     //  duplicate it – the system will throw an error, just like in the example below:
     auto p1 = std::make_unique<Rectangle>(10, 5);
     std::cout << p1->area() << std::endl;
+
+    auto p2{createResource()};
+    std::cout << (p2 == nullptr) << std::endl;
+    std::cout << p2->area() << std::endl;
+    p2.reset();
+    std::cout << (p2 == nullptr) << std::endl;
 }
